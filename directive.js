@@ -1,8 +1,8 @@
 export default {
-  bind (el, binding) {
+  beforeMount(el, binding) {
     const { value } = binding;
-    const defaultLoading = 'http://de.4-traders.com/images/loading_100.gif';
-    const defaultError = 'https://pbs.twimg.com/media/BXhh-sfIAAArh4S.jpg';
+    const defaultLoading = "http://de.4-traders.com/images/loading_100.gif";
+    const defaultError = "https://pbs.twimg.com/media/BXhh-sfIAAArh4S.jpg";
     const img = new Image();
 
     let loading = defaultLoading;
@@ -15,7 +15,7 @@ export default {
       );
     }
 
-    if (typeof value === 'string') {
+    if (typeof value === "string") {
       loading = value;
       error = value;
     }
@@ -36,5 +36,5 @@ export default {
     img.onerror = () => {
       el.src = error;
     };
-  }
+  },
 };
