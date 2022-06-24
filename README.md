@@ -1,5 +1,5 @@
-<h1> <center> Vue Image Fallback </center> </h1>
-<center>for Vue 3</center>
+<h1 align="center"> Vue Image Fallback </h1>
+<h4 align="center">for Vue 3</h4>
 <br/>
 <br/>
 
