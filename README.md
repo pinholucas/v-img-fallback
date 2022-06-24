@@ -1,5 +1,9 @@
-# Vue Image Fallback
+<h1> <center> Vue Image Fallback </center> </h1>
+<center>for Vue 3</center>
+<br/>
+<br/>
 
+## Description
 > v-img-fallback
 
 Vue image placeholder directive for broken images.
@@ -14,25 +18,14 @@ If you like this project, please give it a star, and consider following the auth
 
 `yarn add v-img-fallback`
 
-### Transpile for `target: es5`
-This module is distributed as an esm module.
-
-If you need backwards compatibility, you will need to transpile this module:
-
-```js
-// in your vue.config.js for vue-cli-3
-module.exports = {
-  /* ... other config ... */
-  transpileDependencies: ['v-img-fallback']
-}
-```
-
 ### Install globally
 ```js
-import Vue from 'vue';
+import { createApp } from 'vue';
 import VueImgFallback from 'v-img-fallback';
 
-Vue.use(VueImgFallback, {
+const app = createApp({})
+
+app.use(VueImgFallback, {
   loading: 'path/to/loading/image',
   error: 'path/to/error/image'
 });
@@ -104,12 +97,8 @@ Path or image url. This value will be used in both loading and error state.
 </script>
 ```
 
-**Update**
-
-*January 25, 2018* - Added options object to `Vue.use(VueImgFallback, options)`. Options should have `loading` and `error` properties. These values will always be overwritten by the value inside `v-img-fallback` directive.
-
 **Tips**
 
 `loading` value can be a `.gif` **Gee**. **Ahy**. **Ef**. *(I will die with dignity LOL)*.
 
-**Made with :heart: by Jofferson Ramirez Tiquez**
+**Made with :heart: by Jofferson Ramirez Tiquez & ported to Vue 3 by Lucas Pinho (its not a big thing, k) **
