@@ -1,16 +1,19 @@
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/v-mask)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/probil/v-mask/master/LICENSE)
+[![Vue3](https://img.shields.io/badge/Vue-3.x-brightgreen.svg)](https://vuejs.org/)
 <h1 align="center"> Vue Image Fallback </h1>
 <h4 align="center">for Vue 3</h4>
 <br/>
 <br/>
 
-## Description
+## 📄 Description
 > v-img-fallback
 
 Vue image placeholder directive for broken images.
 
 If you like this project, please give it a star, and consider following the author. :)
 
-## Usage
+## ⚙️ Install & Usage
 
 ### Install with NPM or Yarn
 
